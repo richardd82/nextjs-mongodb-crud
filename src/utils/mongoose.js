@@ -8,7 +8,7 @@ export const connectDB = async () => {
     if(conn.isConnected) return;
 
   const db = await connect("mongodb://127.0.0.1/nextmongocrud");
-  console.log(db.connection.db.databaseName);
+//   console.log(db.connection.db.databaseName);
   conn.isConnected = db.connections[0].readyState; //Devuelve un número que indica el estado del socket
 };
 
